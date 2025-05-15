@@ -1,0 +1,160 @@
+/* === Base Reset & Layout === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: #fffefc;
+    color: #222;
+    padding: 0 20px;
+  }
+  
+  /* === Header === */
+  header {
+    background-color: #483285;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+  
+  /* === Navigation === */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    background-color: #f0f0f0;
+    padding: 12px;
+    margin-top: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #483285;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  /* === Main Content === */
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    color: #30245e;
+    margin-bottom: 12px;
+  }
+  
+  section p {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+  
+  /* === Logo & Images === */
+  .logo {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  /* === Learning Journey Stages === */
+  .learning-stages {
+    background-color: #f5f9ff;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  
+  .learning-stages h2 {
+    text-align: center;
+    color: #483285;
+    margin-bottom: 25px;
+  }
+  
+  .learning-stages .intro {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .stage-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-left: 5px solid #483285;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .stage-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #483285;
+  }
+  
+  .stage-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #444;
+  }
+  
+  /* === Benefits Section === */
+  .benefits {
+    background-color: #fffbe6;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  
+  .benefits h2 {
+    color: #ff8c00;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .benefits ul {
+    padding-left: 20px;
+    line-height: 1.8;
+  }
+  
+  .benefits li {
+    margin-bottom: 10px;
+  }
+  
+  /* === Footer === */
+  footer {
+    background-color: #483285;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    margin-top: 50px;
+  }
+  

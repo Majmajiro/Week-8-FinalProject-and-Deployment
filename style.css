@@ -1,0 +1,1039 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+    background-color: #fef6e4; /* warm parchment tone */
+    color: #4a3f35; /* rich brown */
+    padding: 20px;
+  }
+  
+  
+  /* Branding Colors from Logo */
+  :root {
+    --primary-blue: #0071bc;
+    --accent-yellow: #fbb034;
+    --dark-blue: #003366;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  /* Main Sections */
+  main {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: var(--accent-yellow);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Programs List */
+  .programs h3 {
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+  }
+  
+  .programs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .programs li {
+    background-color: #e6f0ff;
+    margin: 8px 0;
+    padding: 10px;
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 4px;
+  }
+  
+  /* CTA Button */
+  .cta button {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .cta button:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+/* Gallery Styles */
+.gallery-container {
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+  }
+  
+  .slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: var(--dark-blue);
+  }
+/* Reset list styles for nav */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  /* Style individual links */
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  nav a:hover {
+    background-color: #050505; /* Class Measures purple */
+    color: white;
+  }
+  
+  /* Optional: Highlight active page */
+  nav a.active {
+    background-color: #ffc107; /* Accent color */
+    color: #000;
+  }
+  .benefits {
+    background-color: #f0f9ff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 900px;
+  }
+  
+  .benefits h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #3b82f6;
+  }
+  
+  .benefits ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    line-height: 1.7;
+  }
+  
+  .benefits li {
+    margin-bottom: 10px;
+  }
+  .about-message {
+    background-color: #fdf7f0; /* soft cream background */
+    padding: 30px;
+    margin: 30px auto;
+    border-left: 6px solid #a34fc5; /* vibrant purple from logo */
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    color: #333;
+  }
+  
+  .about-message h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #4a2c76;
+    text-align: center;
+    text-wrap: balance;
+  }
+  
+  .about-message p {
+    margin-bottom: 15px;
+  }
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #fefeff;
+  color: #333;
+}
+
+header {
+  background-color: #000; /* Black from your logo */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #540d6e;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #f49906;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.programs ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.cta button {
+  background-color: #f4a805;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #000; /* Black from your logo */
+}
+
+/* Gallery Slider */
+.gallery-container {
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 12px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+footer {
+  background-color: #050505;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.explore-button {
+  display: inline-block;
+  background-color: #e18c0c;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #f8e10d;
+}
+
+.program-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.program-block {
+  background-color: #f9f9ff;
+  border-left: 6px solid #483285;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.program-block:hover {
+  transform: scale(1.02);
+  background-color: #f0f6ff;
+}
+
+.program-block h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #2c2c54;
+}
+
+.program-block p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.enroll-btn {
+  display: inline-block;
+  background-color: #a05fb4;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #6a4ea1;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: #fdf7f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form button {
+  display: inline-block;
+  background-color: #920dbf;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--dark-blue);
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #540d6e;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #fdc10d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #050505;
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 15px;
+  }
+}
+.logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  align-items: end;
+}
+
+.benefits-checklist {
+  background-color: #f0f9ff;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.benefits-checklist h2 {
+  color: #003366;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.benefits-checklist p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.benefits-checklist ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.benefits-checklist li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.benefits-checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #540d6e;
+  font-weight: bold;
+}
+.benefits-checklist li:hover {
+  background-color: #e6f0ff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.benefits-checklist li:hover::before {
+  color: #003366;
+}
+.benefits-checklist li:hover {
+  color: #003366;
+}
+.benefits-checklist li:hover {
+  color: #003366;
+}
+.benefits-checklist li:hover {
+  color: #003366;
+}
+.benefits-checklist li:hover {
+  color: #003366;
+}
+.benefits-checklist li:hover {
+  color: #003366;
+}
+
+
+/* === Learning Journey Stages === */
+.learning-stages {
+  background-color: #fef7f0;
+  padding: 40px 20px;
+  border-left: 6px solid #a34fc5;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.learning-stages h2 {
+  text-align: center;
+  color: #4a2c76;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.learning-stages .intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.stage-card {
+  background-color: #fff;
+  border: 2px solid #e3d8f1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stage-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(80, 0, 100, 0.1);
+}
+
+.stage-card h3 {
+  color: #483285;
+  margin-bottom: 10px;
+}
+
+.stage-card ul {
+  list-style-type: square;
+  margin-left: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.stage-card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* ==== Base Reset & Typography ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fefdfb;
+  color: #333;
+  padding: 0 15px;
+}
+
+/* ==== Header ==== */
+header {
+  background-color: #4a2c76; /* Rich purple */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}
+
+/* ==== Navigation ==== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #eae2f8;
+  padding: 12px;
+  margin: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a2c76;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #a34fc5;
+  color: white;
+}
+
+/* ==== Main Content ==== */
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ==== Hero Section ==== */
+.hero {
+  background-color: #fdf7f0;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hero h2 {
+  color: #4a2c76;
+  margin-bottom: 15px;
+}
+
+/* ==== Sections ==== */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #3b2e5a;
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+/* ==== Vision & Mission Images ==== */
+.logo {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ==== Learning Journey Stages ==== */
+.learning-stages {
+  background-color: #fff0f8;
+  padding: 30px;
+  border-left: 6px solid #a34fc5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.learning-stages h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4a2c76;
+  margin-bottom: 25px;
+}
+
+.learning-stages .intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.stage-card {
+  background-color: white;
+  border: 1px solid #e3d8f1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.stage-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.stage-card h3 {
+  color: #5e2f8e;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.stage-card ul {
+  list-style: square;
+  margin-left: 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ==== Benefits Section ==== */
+.benefits {
+  background-color: #f0f9ff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.benefits h2 {
+  color: #0d3b66;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.benefits ul {
+  margin-left: 20px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.benefits li {
+  margin-bottom: 10px;
+}
+
+/* ==== Footer ==== */
+footer {
+  background-color: #4a2c76;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* === Base Reset & Layout === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  background-color: #fffefc;
+  color: #222;
+  padding: 0 20px;
+}
+
+/* === Header === */
+header {
+  background-color: #483285;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* === Navigation === */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  background-color: #f0f0f0;
+  padding: 12px;
+  margin-top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #483285;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* === Main Content === */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #30245e;
+  margin-bottom: 12px;
+}
+
+section p {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+/* === Logo & Images === */
+.logo {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* === Learning Journey Stages === */
+.learning-stages {
+  background-color: #f5f9ff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.learning-stages h2 {
+  text-align: center;
+  color: #483285;
+  margin-bottom: 25px;
+}
+
+.learning-stages .intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.stage-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid #483285;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.stage-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #483285;
+}
+
+.stage-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #444;
+}
+
+/* === Benefits Section === */
+.benefits {
+  background-color: #fffbe6;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.benefits h2 {
+  color: #ff8c00;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.benefits ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.benefits li {
+  margin-bottom: 10px;
+}
+
+/* === Footer === */
+footer {
+  background-color: #483285;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  margin-top: 50px;
+}
+.stages-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.stage-card {
+  flex: 1 1 calc(50% - 20px); /* Two columns with gap */
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid #483285;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .stage-card {
+    flex: 1 1 100%;
+  }
+}
+ 
+/* === Global Image Styling === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === Specific for Program Images === */
+.program-block img {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* === Gallery Slider Images === */
+.slider img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}

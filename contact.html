@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Class Measures</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’re excited to hear from you!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Enrol Your Child Today!</h2>
+      <form class="contact-form">
+        <label for="parentName">Parent's Name:</label>
+        <input type="text" id="parentName" name="parentName" required>
+
+        <label for="childName">Child's Name:</label>
+        <input type="text" id="childName" name="childName" required>
+
+        <label for="age">Child's Age:</label>
+        <input type="number" id="age" name="age" min="4" max="17" required>
+
+        <label for="program">Program of Interest:</label>
+        <select id="program" name="program" required>
+          <option value="">--Please choose--</option>
+          <option value="Coding">Coding</option>
+          <option value="Chess">Chess</option>
+          <option value="Robotics">Robotics</option>
+          <option value="French">French</option>
+          <option value="Reading">Reading</option>
+        </select>
+
+        <label for="contact">Phone/Email:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="message">Additional Message (optional):</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+        <form class="contact-form" action="madge.mutemi@gmail.com" method="post" enctype="text/plain">
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Class Measures Ltd | All Rights Reserved</p>
+  </footer>
+  <script>
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', function () {
+      alert('Thank you for contacting us! We’ll be in touch soon.');
+    });
+  </script>
+  <script src="script.js"></script>  
+</body>
+</html>
