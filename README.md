@@ -1,6 +1,8 @@
 # Week-8-FinalProject-and-Deployment
 # Class Measures Portfolio Website 🌟
 
+# URL - https://majmajiro.github.io/Week-8-FinalProject-and-Deployment/
+
 This is a multipage responsive website for **Class Measures Limited**, an EdTech company that empowers children aged 4–17 with 21st-century soft skills through fun and engaging afterschool programs.
 
 ## 🚀 Project Overview
